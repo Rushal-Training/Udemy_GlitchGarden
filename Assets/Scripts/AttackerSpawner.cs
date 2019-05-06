@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
-	[SerializeField] Attacker attackerPrefab;
+	[SerializeField] Attacker[] attackers;
 	[SerializeField] float minSpawnDelay = 1f;
 	[SerializeField] float maxSpawnDelay = 5f;
 
@@ -22,12 +20,9 @@ public class AttackerSpawner : MonoBehaviour
 
 	private void SpawnAttacker()
 	{
-		Attacker newAttacker = Instantiate( attackerPrefab, transform.position, Quaternion.identity ) as Attacker;
+		int attackerIndex = UnityEngine.Random.Range( 0, attackers.Length );
+
+		Attacker newAttacker = Instantiate( attackers[attackerIndex], transform.position, Quaternion.identity ) as Attacker;
 		newAttacker.transform.parent = transform;
 	}
-
-	void Update()
-    {
-        
-    }
 }
