@@ -89,8 +89,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3370222546313405472}
   - component: {fileID: 3370222546313405473}
-  - component: {fileID: 4343109079167154630}
   - component: {fileID: 4846599766350022362}
+  - component: {fileID: 4343109079167154630}
+  - component: {fileID: 5225767805312634232}
   m_Layer: 0
   m_Name: Trophy
   m_TagString: Untagged
@@ -134,19 +135,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4343109079167154630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3370222546313405479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6595ede89d45ad540a8a955d956e7836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCost: 25
 --- !u!61 &4846599766350022362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -173,6 +161,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0223889, y: 1.028786}
   m_EdgeRadius: 0
+--- !u!114 &4343109079167154630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370222546313405479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6595ede89d45ad540a8a955d956e7836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 25
+--- !u!114 &5225767805312634232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3370222546313405479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94e20fc57de5144a8b0dfd6d41ca936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
+  deathVFX: {fileID: 0}
 --- !u!1 &3370222546779740319
 GameObject:
   m_ObjectHideFlags: 0
