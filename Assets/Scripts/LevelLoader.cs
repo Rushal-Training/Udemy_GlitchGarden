@@ -28,7 +28,12 @@ public class LevelLoader : MonoBehaviour
 	public void LoadMainMenu()
 	{
 		Time.timeScale = 1;
-		SceneManager.LoadScene( "Start Screen" );
+		SceneManager.LoadScene( "StartScreen" );
+	}
+
+	public void LoadOptionsScreen()
+	{
+		SceneManager.LoadScene( "OptionsScreen" );
 	}
 
 	public void RestartScene()
@@ -44,7 +49,7 @@ public class LevelLoader : MonoBehaviour
 
 	public void LoadGameOver()
 	{
-		SceneManager.LoadScene( "Game Over" );
+		SceneManager.LoadScene( "GameOver" );
 	}
 
 	public void QuitGame()

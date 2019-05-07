@@ -5,12 +5,14 @@ using TMPro;
 
 public class LivesDisplay : MonoBehaviour
 {
-	[SerializeField] int lives = 60;
+	[SerializeField] float baseLives = 3f;
 
+	float lives;
 	TextMeshProUGUI livesText;
 
 	void Start()
 	{
+		lives = baseLives - PlayerPrefsController.GetDifficulty();
 		livesText = GetComponent<TextMeshProUGUI>();
 		UpdateDisplay();
 	}
